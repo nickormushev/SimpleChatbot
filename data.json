@@ -49,6 +49,17 @@
             "class": "meaning",
             "pattern": ["What is the meaning of life", "meaning life", "What should I do with my life"],
             "responses": ["42"]
+        },
+        {
+            "class": "love",
+            "pattern": ["Love", "Do you love me", "What do you love"],
+            "responses": ["I love you!!! But I love WWE more <3"]
+        },
+        {
+            "class": "whysad",
+            "pattern": ["Why are you sad", "What makes you sad", "Why sad"],
+            "responses": ["Just because"]
         }
+
     ]
 }
