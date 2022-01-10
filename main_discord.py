@@ -83,7 +83,7 @@ model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accur
 callback = myCallback()
 model.fit(one_hot_encoded_training_data, output_labels, epochs = 55, callbacks=[callback])
 
-BOT_TOKEN = "OTI3ODQyMjg4NzI0NDk2NDA0.YdQGeA._258GNuP8ausH7o8M4W4xUiZGFU"
+BOT_TOKEN = "TOKEN"
 
 client = discord.Client()
 
