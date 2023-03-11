@@ -6,6 +6,7 @@ import json
 import random
 import discord
 import sys
+import os
 
 stemmer = LancasterStemmer()
 
@@ -83,9 +84,9 @@ model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accur
 callback = myCallback()
 model.fit(one_hot_encoded_training_data, output_labels, epochs = 55, callbacks=[callback])
 
-BOT_TOKEN = "TOKEN"
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
-client = discord.Client()
+client = discord.Client(intents=discord.Intents.default())
 
 @client.event
 async def on_message(message):
